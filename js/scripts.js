@@ -20,5 +20,15 @@ $(document).ready(function() {
     var inputtedTime = $("input#new-time").val();
     var inputtedNotes = $("input#new-notes").val();
 
+    var newTrip = new Place(inputtedLocation, inputtedLandmark, inputtedTime, inputtedNotes);
+
+    $("ul#trips").append("<li class='trip'>" + newTrip.loc + "</li>");
+
+    $(".trip").last().click(function() {
+      $("#trip-name").text(newTrip.loc);
+      $(".dates-insert").text(newTrip.time);
+      $(".landmark-insert").text(newTrip.landmark);
+      $(".notes-insert").text(newTrip.notes);
+    });
   });
 });

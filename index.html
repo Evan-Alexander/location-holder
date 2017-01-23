@@ -10,26 +10,41 @@
   <body>
     <div class="container">
       <h1>Places You've Been</h1>
-      <p>Please input a place</p>
-      <form id="new-trip">
-        <div class="form-group">
-          <label for="destination">Destination</label>
-          <input type="text" class="form-control" id="new-destination">
+      <div class="row">
+        <div class="col-md-6">
+          <p>Please input a place</p>
+          <form id="new-trip">
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input type="text" class="form-control" id="new-destination">
+            </div>
+            <div class="form-group">
+              <label for="landmark">Landmark</label>
+              <input type="text" class="form-control" id="new-landmark">
+            </div>
+            <div class="form-group">
+              <label for="time">Dates</label>
+              <input type="text" class="form-control" id="new-time">
+            </div>
+            <div class="form-group">
+              <label for="notes">Notes</label>
+              <input type="text" class="form-control" id="new-notes">
+            </div>
+            <button type="submit" class="btn-success">Add a trip</button>
+          </form>
+          <h2> Trips you've been on </h2>
+          <ul id="trips">
+          </ul>
         </div>
-        <div class="form-group">
-          <label for="landmark">Landmark</label>
-          <input type="text" class="form-control" id="new-landmark">
+        <div class="col-md-6">
+          <div id="show-trip">
+            <h2><span id="trip-name"></span></h2>
+            <p>Trip Dates: <span class="dates-insert"></span></p>
+            <p>Landmarks: <span class="landmark-insert"></span></p>
+            <p>Notes: <span class="notes-insert"></span></p>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="time">Dates</label>
-          <input type="text" class="form-control" id="new-time">
-        </div>
-        <div class="form-group">
-          <label for="notes">Notes</label>
-          <input type="text" class="form-control" id="new-notes">
-        </div>
-        <button type="submit" class="btn-success">Add a trip</button>
-      </form>
+      </div>
 
 
     </div>
