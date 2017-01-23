@@ -25,6 +25,7 @@ $(document).ready(function() {
     $("ul#trips").append("<li class='trip'>" + newTrip.loc + "</li>");
 
     $(".trip").last().click(function() {
+      $("#show-trip").show();
       $("#trip-name").text(newTrip.loc);
       $(".dates-insert").text(newTrip.time);
       $(".landmark-insert").text(newTrip.landmark);

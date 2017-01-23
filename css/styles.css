@@ -1,0 +1,12 @@
+#show-trip {
+  display: none;
+}
+
+#trips {
+  cursor: pointer;
+  color: #08c;
+}
+
+#trips:hover {
+  text-decoration: underline;
+}

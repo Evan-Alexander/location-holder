@@ -20,6 +20,12 @@ Further practice on objects.  Places you've been app.
 * Other than HTML and CSS -
 Bootstrap and Jquery files are included for additional styling and functionality.
 
+## Specs
+1. User inputs a trip and the trip is stored in a Place object
+2. User sees a list of a single trip they entered in the form.
+3. User sees a list of multiples trips they entered via the form
+4. User clicks on a given trip from the list and sees the Place object details displayed in right column.
+
 ### License
 
 MIT License
